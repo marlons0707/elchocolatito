@@ -1,0 +1,575 @@
+:root {
+    /*--deg_ini_color: #1C287C;
+    --deg_fin_color: #671A5E;*/
+    --deg_ini_color: #472514;
+    --deg_fin_color: #472514;
+  
+    
+  }
+  
+  .degradado_btn {
+    color: white;
+    background: linear-gradient(to right, var(--deg_ini_color), var(--deg_fin_color));
+  }
+  
+  /* LOGIN
+     ===================================================================================================== */
+  #login-logo {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*
+  #login-card {
+    margin-top: 15%;
+    opacity: 1;
+    background: linear-gradient(to right, var(--deg_ini_color), var(--deg_fin_color));
+  }
+  
+  #login-card-reg {
+    opacity: 1;
+    background: linear-gradient(to right, var(--deg_ini_color), var(--deg_fin_color));
+  }
+  */
+  
+  /* mover aqui estilo para inputs de lgin pero en blanco*/
+  
+  /* FIN LOGIN
+     ===================================================================================================== */
+  
+  
+  /* PARA TODOS LOS INPUTS COLOR NEGRO */
+  /* color personalidado a inputs en login */
+  /* label focus color */
+  .input-field input[type=text]:focus+label,
+  .materialize-textarea:focus:not([readonly])+label {
+    color: black !important;
+  }
+  
+  .input-field input[type=password]:focus+label,
+  .materialize-textarea:focus:not([readonly])+label {
+    color: black !important;
+  }
+  
+  /* label underline focus color */
+  .input-field input[type=text]:focus,
+  .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+  }
+  
+  .input-field input[type=password]:focus,
+  .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+  }
+  
+  
+  .nav-wrapper {
+    background: linear-gradient(to right, var(--deg_ini_color), var(--deg_fin_color));
+  }
+  
+  main,
+  footer {
+    padding-left: 300px;
+  }
+  
+  @media only screen and (max-width : 992px) {
+  
+    main,
+    footer {
+      padding-left: 0;
+    }
+  }
+  
+  .page-footer {
+      background: linear-gradient(to right, var(--deg_ini_color), var(--deg_fin_color));
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /*main {
+    flex: 1 0 auto;
+  }*/
+  
+  .avatar-status {
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+    width: 28px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+  }
+  
+  .avatar-status i {
+    position: absolute;
+    right: -2px;
+    bottom: 18px;
+    width: 9px !important;
+    height: 9px !important;
+    border: 1px solid #fff;
+    border-radius: 100%;
+  }
+  
+  .avatar-status span.text-circle {
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.2rem;
+    background: #fafafa;
+    display: table-cell;
+  }
+  
+  .avatar-status img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: #e6e6e6;
+    border: 0 none;
+    border-radius: 1000px;
+  }
+  
+  .avatar-online i {
+    background-color: #22e943da;
+  }
+  
+  .notification-badge {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    right: 5px;
+    top: -20px;
+    color: #ffffff;
+    background-color: #00bcd4;
+    margin: 0 -.6em;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 11px;
+  }
+  
+  #profile-dropdown1,
+  #profile-dropdown2 {
+    width: 206px !important;
+    padding: 6px 13px;
+  }
+  
+  .wrapper {
+    padding-left: 300px;
+  }
+  
+  .side-nav {
+    top: 64px;
+    width: 250px;
+    height: 100%;
+  }
+  
+  @media only screen and (max-width : 600px) {
+    .side-nav {
+      top: 58px;
+      width: 250px;
+    }
+  }
+  
+  
+  /* PRELOADER
+     ===================================================================================================== */
+  #loader {
+    position: fixed;
+    top: 45%;
+    left: 57%;
+  }
+  
+  @media only screen and (max-width : 600px) {
+    #loader {
+      top: 45%;
+      left: 45%;
+    }
+  }
+  
+  /* PRELOADER
+     ===================================================================================================== */
+  
+  
+  /* HEADER
+     ===================================================================================================== */
+  
+  /*ul.side-nav .afterheader::after {
+      font-family: 'Material Icons';
+      content: "keyboard_arrow_right";
+      color: #9e9e9e;
+      font-size: 18px;
+      position: absolute;
+      right: 16px;
+    }*/
+  
+  /*#left-sidebar-nav {
+      position: fixed;
+      width: 100px;
+      left: 180px;
+      z-index: 999;
+      height: auto;
+    }*/
+  
+  /* HEADER
+     ===================================================================================================== */
+  
+  
+  
+  /* FOOTER
+     ===================================================================================================== */
+  .page-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  /*.icon-footer {
+      display:inline-block;
+    }*/
+  
+  /* FOOTER
+     ===================================================================================================== */
+  
+  
+  
+  /* USERS-PROFILE
+     ===================================================================================================== */
+  
+  /* USERS-PROFILE
+     ===================================================================================================== */
+  
+  
+  /* SWEET ALERT */
+  .swal2-styled.swal2-confirm {
+    background: gray !important;
+  }
+  
+  
+  /* FLOATING BUTTON */
+  #btn-float {
+    /*background-color: #009688;*/
+    /*background: linear-gradient(to right, #272678, #5E1C62);*/
+    background: linear-gradient(to right, var(--deg_ini_color), var(--deg_fin_color));
+  }
+  
+  
+  
+  
+  /* 
+  CHECKBOXES
+  */
+  
+  /* Checkboxes
+     ========================================================================== */
+  /* CUSTOM CSS CHECKBOXES */
+  form p {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  form p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Remove default checkbox */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  [type="checkbox"] {
+    /* checkbox aspect */
+  }
+  
+  [type="checkbox"]+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    user-select: none;
+  }
+  
+  [type="checkbox"]+label:before,
+  [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: .2s;
+  }
+  
+  [type="checkbox"]:not(.filled-in)+label:after {
+    border: 0;
+    transform: scale(0);
+  }
+  
+  [type="checkbox"]:not(:checked):disabled+label:before {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.42);
+  }
+  
+  [type="checkbox"].tabbed:focus+label:after {
+    transform: scale(1);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  [type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #009688;
+    border-bottom: 2px solid #009688;
+    transform: rotate(40deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+  }
+  
+  [type="checkbox"]:checked:disabled+label:before {
+    border-right: 2px solid rgba(0, 0, 0, 0.42);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.42);
+  }
+  
+  /* Indeterminate checkbox */
+  [type="checkbox"]:indeterminate+label:before {
+    top: -11px;
+    left: -12px;
+    width: 10px;
+    height: 22px;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid #009688;
+    border-bottom: none;
+    transform: rotate(90deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+  }
+  
+  [type="checkbox"]:indeterminate:disabled+label:before {
+    border-right: 2px solid rgba(0, 0, 0, 0.42);
+    background-color: transparent;
+  }
+  
+  [type="checkbox"].filled-in+label:after {
+    border-radius: 2px;
+  }
+  
+  [type="checkbox"].filled-in+label:before,
+  [type="checkbox"].filled-in+label:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    /* .1s delay is for check animation */
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+  }
+  
+  [type="checkbox"].filled-in:not(:checked)+label:before {
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    left: 6px;
+    top: 10px;
+    transform: rotateZ(37deg);
+    transform-origin: 100% 100%;
+  }
+  
+  [type="checkbox"].filled-in:not(:checked)+label:after {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #5a5a5a;
+    top: 0px;
+    z-index: 0;
+  }
+  
+  [type="checkbox"].filled-in:checked+label:before {
+    top: 0;
+    left: 1px;
+    width: 8px;
+    height: 13px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotateZ(37deg);
+    transform-origin: 100% 100%;
+  }
+  
+  [type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #009688;
+    background-color: #009688;
+    z-index: 0;
+  }
+  
+  [type="checkbox"].filled-in.tabbed:focus+label:after {
+    border-radius: 2px;
+    border-color: #5a5a5a;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  [type="checkbox"].filled-in.tabbed:checked:focus+label:after {
+    border-radius: 2px;
+    background-color: #009688;
+    border-color: #009688;
+  }
+  
+  [type="checkbox"].filled-in:disabled:not(:checked)+label:before {
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+  
+  [type="checkbox"].filled-in:disabled:not(:checked)+label:after {
+    border-color: transparent;
+    background-color: #949494;
+  }
+  
+  [type="checkbox"].filled-in:disabled:checked+label:before {
+    background-color: transparent;
+  }
+  
+  [type="checkbox"].filled-in:disabled:checked+label:after {
+    background-color: #949494;
+    border-color: #949494;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* TASK CARD */
+  
+  /* task card */
+  #task-card label {
+    display: block;
+    color: rgba(0, 0, 0, 0.87);
+    height: auto;
+  }
+  
+  #task-card .task-card-title {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  #task-card .task-card-date {
+    font-size: 1.0rem;
+    margin: 0;
+    color: #fff;
+  }
+  
+  #task-card .collection-header {
+    padding: 20px;
+  }
+  
+  #task-card .task-add {
+    position: absolute;
+    right: 10px;
+    top: 76px;
+  }
+  
+  #task-card .task-cat {
+    padding: 2px 4px;
+    color: #fff;
+    margin-left: 37px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-clip: padding-box;
+  }
+  
+  .task-cat {
+    padding: 2px 4px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.8rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-clip: padding-box;
+  }
+  
+  .collection .collection-item.avatar i.circle {
+    font-size: 28px;
+  }
+  
+  
+  /*
+  TABLA USUARIO DATATABLE
+  /******RECORDDAR QUE ESTO SE ESTA APLICACNDO A TODO
+  */
+  
+  table {
+    border: none !important;
+  }
+  
+  td {
+    padding: 5px 5px;
+    text-align: left;
+    border: none !important;
+  }
+  
+  th {
+    /* text-transform: uppercase; */
+    padding: 5px 10px;
+    text-align: left;
+    color: #585757 !important;
+    border: none !important;
+  }
+  
+  #dt_cliente i {
+    color: #585757 !important;
+  }
+  
+  i:hover {
+    cursor: pointer;
+  }
+  
+  #bIcons {
+    padding: 5px 5px 35px 5px;
+    font-size: 2rem;
+  }
+  
+  
+  #cardTable {
+    padding: 5px 50px 5px 20px;
+  }
+  /*
+  FIN TABLA USUARIO DATATABLE
+  */

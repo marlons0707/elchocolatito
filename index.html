@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9LN5MKJW5"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z9LN5MKJW5');
+  </script>
+
+  <!--Import Google Icon Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="assets/css/icons/icons.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  <link rel="icon" href="assets/img/logo.png">
+
+  <meta name="theme-color" content="#472514">
+  <meta name="description" content="Chocolates hechos en casa. Casitas de chocolate, chocolates rellenos, paletas y mucho más."/>
+  <meta name="keywords" content="Chocolates, Chocolates guatemala, casitas de chocolate, paletas de chocolate, chocolatitos, chocolate, chocolates rellenos, El Chocolatito MG"/>
+  <meta http-equiv="cache-control" content="no-cache"/>
+
+  <title>El Chocolatito MG</title>
+
+</head>
+
+
+<body style="background-color: #fff;">
+
+  
+
+  <header>
+    <nav>
+      <div class="nav-wrapper" style="background-color: #472514;">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/img/logo_text.PNG" width="97px">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="center" id="circulo">
+    <div class="progress brown lighten-4" style="margin-top:0px;">
+        <div class="indeterminate brown darken-1" style="width: 100%"></div>
+    </div>    
+  </div>
+
+  <!-- Contenidor -->
+
+  <div id="contenido" class="hide">
+
+    <div class="section">
+    
+      <div _class="container">
+        <div class="row">
+          
+          <!-- Listado de productos -->
+          <div _id="products">
+
+            <div class="col s6 m3">
+              <div id="card" class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img src="assets/img/productos/11.jpg" onclick="modalImage('assets/img/productos/11.jpg')">
+                </div>
+                <div class="card-content" style="margin-top: -15px;">
+                  <span style="font-family: 'Girassol', cursive;">Mini</span>
+                  20.00
+                  <p>Una mini casita, una gran delicia y una de las favoritas. Ya las probaste, tienes que hacerlo ya!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>  
+  
+          <!-- Modal -->
+          <div id="modal-div" class="modal" width="100%">
+            <a style="margin: 2px;" href="javascript:void(0)" class="modal-action modal-close waves-effect waves-red btn-flat right"><i class="material-icons">close</i></a>
+            <div style="margin:-20px;" class="modal-content" id="modal-image"></div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+
+    <footer>
+      <p style="margin-bottom: -12px;">Copyright © El Chocolatito MG</p>
+      <p>Guatemala 2021 | <a href="https://marlons0707.github.io/">Desarrollador</a></p>
+    </footer>
+  
+  </div>
+
+
+  
+
+  <script src="assets/js/plugins/jquery/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/plugins/whatsAppButton.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/index.js"></script> -->
+
+  <script>
+    window.addEventListener('load', () => {
+        setTimeout(carga, 100);
+
+        function carga() {
+            document.getElementById('circulo').className = 'hide';
+            document.getElementById('contenido').className = ''; //animated fadeInLeftBig animated bounceIn
+        }
+    })
+</script>
+
+</body>
+
+</html>

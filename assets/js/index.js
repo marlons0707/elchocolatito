@@ -1,3 +1,4 @@
+/*
 var divProductos = document.getElementById('products');
 getProducts();
 
@@ -48,7 +49,7 @@ function renderProducts(response) {
     }
 
 }
-
+*/
 function modalImage(imagen) {
 
     var modalImage = document.getElementById("modal-image");
